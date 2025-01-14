@@ -23,7 +23,7 @@ const FCard = () => {
         </div>
         <div className="features-card">
           <img src={myimg4} alt="fireSpot" />
-          <p>Excellent support</p>
+          <p>Excellent supports</p>
         </div>
       </div>
     </section>
