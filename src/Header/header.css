@@ -1,0 +1,101 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1A112B;
+    color: white;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ffa500;
+}
+
+.cat-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cat {
+    width: 40px;
+    height: 40px;
+    background-image: url('https://placekitten.com/40/40');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.quote-button {
+    color: #fff;
+    border: solid 2px #834DEB;
+    padding: 10px 16px;
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #ffd700 0%, #84c9e6 100%);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.quote-button:hover {
+    background-image: linear-gradient(135deg, #84c9e6 0%, #ffd700 100%);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #444;
+    padding: 10px;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+}
