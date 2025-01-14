@@ -1,0 +1,22 @@
+.features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.features-card img{
+    width: 70px;
+    height: auto;
+}
+.features-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 25%;
+    height: 200px;
+    background-color: #2F2248;
+    color: #fff;
+}
